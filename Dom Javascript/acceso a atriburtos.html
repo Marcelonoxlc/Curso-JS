@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background: blueviolet;
+            display: inline-block;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        .azul{
+            background-color: blue;
+            border: 1px solid black;
+        }
+
+        .rojo{
+            background-color: rgb(255, 0, 0);
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <section id="contenedor">
+        <div class=""></div>
+        <div class=""></div>
+    </section>
+
+
+    <script>
+        var elemento = document.createElement("div");
+        elemento.setAttribute("class","rojo");
+        document.body.appendChild(elemento);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="titulo">
+
+    </div>
+
+    <script>
+        var elemento = document.createElement("h1"); // especifica el elemento a crear
+        var contenido = document.createTextNode("Titular del sitio"); // contenido a crear
+        
+        elemento.appendChild(contenido); //agrega el contenido al elemento
+
+        elemento.setAttribute("align","center"); // setea atributos especificados
+
+        document.getElementById("titulo").appendChild(elemento); // incrusta el elemento donde se indica (donde aparecera el nodo creado)
+
+
+    </script>
+</body>
+</html>

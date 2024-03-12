@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="miDiv">
+
+        <p>Este es un párrafo dentro de un div.</p>
+
+    </div>
+      
+    <button onclick="cambiarContenido()">Cambiar Contenido</button>
+      
+    <script>
+        
+        function cambiarContenido() {
+        // Accediendo al div mediante su ID
+        var div = document.getElementById('miDiv');
+        
+        // Modificando el contenido del div usando innerHTML
+        div.innerHTML = '<p>Ahora el contenido ha sido cambiado.</p>';
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="clickBtn">Click aquí</button>
+
+    <button id="hoverBtn">Pasa el ratón aquí</button>
+
+    <input type="text" id="textInput" placeholder="Escribe algo">
+
+    <div id="divMousePos" style="height: 100px; width: 100px; background-color: lightblue;"></div>
+
+
+<!-- JavaScript -->
+<script>
+    // Evento Click
+    document.getElementById("clickBtn").addEventListener("click", function() {
+        alert("Has hecho clic en el botón.");
+    });
+
+    // Evento Hover
+    document.getElementById("hoverBtn").addEventListener("mouseover", function() {
+        alert("Has pasado el ratón sobre el botón.");
+    });
+
+    // Evento de teclado
+    document.getElementById("textInput").addEventListener("keyup", function(event) {
+        alert("Has escrito: " + event.target.value);
+    });
+
+    // Evento de movimiento de ratón
+    document.addEventListener("mousemove", function(event) {
+        var xPos = event.clientX;
+        var yPos = event.clientY;
+        document.getElementById("divMousePos").innerHTML = "X: " + xPos + ", Y: " + yPos;
+    });
+</script>
+
+</body>
+</html>
