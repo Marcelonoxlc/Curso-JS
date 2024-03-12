@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font-size: 20px;}
+    </style>
+</head>
+<body>
+    <script>
+
+        // Crear un array
+        let frutas = ['Manzana', 'Plátano', 'Naranja', 'Mango'];
+        document.write ("Array inicial: ", frutas + " / ");
+
+        // Acceder a un elemento por su índice
+        document.write("Acceder al primer elemento:", frutas[0] + " / "); // Salida: Manzana
+
+        // Modificar un elemento por su índice
+        frutas[1] = 'Pera';
+        document.write("Array después de modificar:", frutas  + " / "); // Salida: ['Manzana', 'Pera', 'Naranja', 'Mango']
+
+        // Obtener la longitud de un array
+        document.write("Longitud del array:", frutas.length  + " / "); // Salida: 4
+
+        // Añadir elementos al final del array
+        frutas.push('Uvas');
+        document.write("Array después de añadir al final:", frutas  + " / "); // Salida: ['Manzana', 'Pera', 'Naranja', 'Mango', 'Uvas']
+
+        // Eliminar el último elemento del array
+        let ultimaFruta = frutas.pop();
+        document.write("Elemento eliminado:", ultimaFruta  + " / "); // Salida: Uvas
+        document.write("Array después de eliminar el último elemento:", frutas  + " / "); // Salida: ['Manzana', 'Pera', 'Naranja', 'Mango']
+
+        // Añadir elementos al inicio del array
+        frutas.unshift('Piña');
+        document.write("Array después de añadir al inicio:", frutas  + " / "); // Salida: ['Piña', 'Manzana', 'Pera', 'Naranja', 'Mango']
+
+        // Eliminar el primer elemento del array
+        let primeraFruta = frutas.shift();
+        document.write("Elemento eliminado:", primeraFruta  + " / "); // Salida: Piña
+        document.write("Array después de eliminar el primer elemento:", frutas  + " / "); // Salida: ['Manzana', 'Pera', 'Naranja', 'Mango']
+
+        // Encontrar el índice de un elemento
+        document.write("Índice de 'Naranja':", frutas.indexOf('Naranja')  + " / "); // Salida: 2
+
+        // Eliminar un elemento por su índice
+        let frutaEliminada = frutas.splice(1, 1); // Elimina 1 elemento en el índice 1
+        document.write("Elemento eliminado por índice:", frutaEliminada  + " / "); // Salida: ['Pera']
+        document.write("Array después de eliminar por índice:", frutas  + " / "); // Salida: ['Manzana', 'Naranja', 'Mango']
+
+        // Copiar un array
+        let arrayCopiado = frutas.slice();
+        document.write("Copia del array:", arrayCopiado  + " / "); // Salida: ['Manzana', 'Naranja', 'Mango']
+
+        // Iterar sobre un array usando forEach
+        document.write("Iterar sobre el array:"  + " / ");
+        frutas.forEach(function(fruta) {
+        document.write(fruta);
+        });
+        // Salida:
+        // Manzana
+        // Naranja
+        // Mango
+    </script>
+</body>
+</html>

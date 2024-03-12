@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bucle for
+        document.write("Bucle for:");
+        for (let i = 1; i <= 5; i++) {
+            document.write(i);
+        }
+
+        // Bucle while
+        document.write("\nBucle while:");
+        let j = 1;
+        while (j <= 5) {
+            document.write(j);
+            j++;
+        }
+
+        // Bucle do-while
+        document.write("\nBucle do-while:");
+        let k = 1;
+        do {
+            document.write(k);
+            k++;
+        } while (k <= 5);
+
+        // Métodos de iteración de arrays
+        document.write("\nMétodos de iteración de arrays:");
+        const array = [1, 2, 3, 4, 5];
+
+        // forEach
+        document.write("forEach:");
+        array.forEach(item => {
+            document.write(item);
+        });
+
+        // map
+        document.write("map:");
+        const doubledArray = array.map(item => item * 2);
+        document.write(doubledArray);
+
+        // filter
+        document.write("filter:");
+        const evenNumbers = array.filter(item => item % 2 === 0);
+        document.write(evenNumbers);
+
+        // reduce
+        document.write("reduce:");
+        const sum = array.reduce((total, current) => total + current, 0);
+        document.write(sum);
+
+        // Métodos de iteración de objetos
+        document.write("\nMétodos de iteración de objetos:");
+        const objeto = { a: 1, b: 2, c: 3 };
+
+        // for-in
+        document.write("for-in:");
+        for (let key in objeto) {
+            document.write(`${key}: ${objeto[key]}`);
+        }
+
+        // Object.keys
+    document.write("Object.keys:");
+        const keys = Object.keys(objeto);
+        document.write(keys);
+
+        // Object.values
+        document.write("Object.values:");
+        const values = Object.values(objeto);
+        document.write(values);
+
+        // Object.entries
+    document.write("Object.entries:");
+        const entries = Object.entries(objeto);
+        document.write(entries);
+    </script>
+</body>
+</html>

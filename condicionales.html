@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       //if...else
+        let edad = 18;
+
+        if (edad >= 18) {
+        document.write("Eres mayor de edad.");
+        } else {
+        document.write("Eres menor de edad.");
+        }
+
+
+        //operador ternario
+        let edadactual = 20;
+        let mensaje = (edadactual >= 18) ? "Eres mayor de edad." : "Eres menor de edad.";
+        document.write(mensaje);
+
+
+        //switch
+        let dia = new Date().getDay();
+
+        let mensajes;
+
+        switch (dia) {
+        case 0:
+            mensajes = "Hoy es domingo.";
+            break;
+        case 1:
+            mensajes = "Hoy es lunes.";
+            break;
+        case 2:
+            mensajes = "Hoy es martes.";
+            break;
+        case 3:
+            mensajes = "Hoy es miércoles.";
+            break;
+        case 4:
+            mensajes = "Hoy es jueves.";
+            break;
+        case 5:
+            mensajes = "Hoy es viernes.";
+            break;
+        case 6:
+            mensajes = "Hoy es sábado.";
+            break;
+        default:
+            mensajes = "Día no válido.";
+        }
+        document.write(mensajes);
+
+
+        // Condicional con múltiples condiciones:
+        let hora = new Date().getHours();
+        let salida;
+
+        if (hora < 12) {
+        salida = "Buenos días.";
+        } else if (hora < 18) {
+        salida = "Buenas tardes.";
+        } else {
+        salida = "Buenas noches.";
+        }
+        document.write(salida);
+    </script>
+</body>
+</html>
